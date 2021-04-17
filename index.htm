@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <article class="cards">
+        <div class="cards__content">
+            <div class="cards__icons-content"></div>
+            <div class="cards__icons-content"></div>
+        </div>
+
+        <div class="cards__position">
+            <div class="cards__black-position">
+                <span class="cards__puntos-black">Puntos disponibles: 100</span>
+                <div class="cards__user">
+                    <i class="fas fa-user"></i>
+                    <p class="cards__puntos-user">100 <br>puntos<br><br>Canjear</p>
+                    <div class="cards__botton-user">
+                        <a href="#" class="cards__a">COMPRAR</a>
+                        <a href="#" class="cards__a cards__a--coral">CANCELAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+        body {font-family: 'Poppins', sans-serif;}
+        .cards {height: 600px; margin-top: 2rem; position: relative;}
+        .cards__content {height: 100%; display: flex; justify-content: center;}
+        .cards__icons-content {
+            width: 30%;
+            height: 585px;
+            background: lightskyblue;
+            margin-top: 15px;
+        }
+        .cards__position {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .cards__black-position {
+            width: 25%;
+            height: 100%;
+            background: #27272c;
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, .5);
+            text-align: center;
+        }
+
+            .cards__puntos-black {
+                text-align: center;
+                padding: .4rem;
+                margin-top: 2rem;
+                border: 2px solid;
+                display: inline-block;
+                font-size: 1.5rem;
+                border-radius: 10px;
+                color: #fff;
+            }
+        .cards__user {margin-top: 3rem;}
+            .fa-user {font-size: 10rem; color: #fff;}
+            .cards__puntos-user {color: #fff; font-size: 1.3rem;}
+            .cards__a {
+                color: #fff;
+                text-decoration: none;
+                padding: 13px 40px;
+                display: inline-block;
+                margin: 10px;
+                background: teal;
+                border-radius: 5px;
+            }
+            .cards__a--coral { background:coral;}
+            
+        
+        
+    </style>
+</body>
+
+
+
+<script src="https://kit.fontawesome.com/ab2808ea55.js" crossorigin="anonymous"></script>
+
+</html>
